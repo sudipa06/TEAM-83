@@ -67,7 +67,13 @@
         #container>div:last-child>div {
             border: 1px solid black;
             display: flex;
-            align-content: center;
+            /* align-content: center; */
+            text-align: center;
+        }
+
+        #container>div:last-child>p {
+            width: 70%;
+            margin: 5% auto 1% auto;
         }
 
         h3 {
@@ -78,7 +84,6 @@
         hr {
             padding-top: 0%;
             margin-top: 0%;
-
         }
 
         #container>div:last-child>div:nth-child(2) {
@@ -112,6 +117,19 @@
             color: white;
             text-decoration: none;
         }
+        button{
+            background-color: rgb(212, 146, 183);
+            border-radius: 8px;
+            padding: 5px 10px;
+        }
+
+        button:hover{
+            background-color: rgb(165, 79, 128);
+            border-radius: 10px;
+            padding: 5px 10px;
+            color: white;
+        }
+
     </style>
 </head>
 
@@ -122,19 +140,22 @@
                 <img src="https://thumbs.dreamstime.com/b/login-concept-28963227.jpg" alt="">
             </div>
             <div>
-                <h3>Email:</h3><input type="email" placeholder="enter your email">
+                <h3>Email:</h3>
+                <input type="email" id="email" placeholder="enter your email">
                 <hr>
-                <h3>Password:</h3><input type="password" placeholder="enter your password">
+                <h3>Password:</h3>
+                <input type="password" id="pass" placeholder="enter your password">
                 <hr>
             </div>
             <br>
             <div>
-                <h2><a href="#">Continue</a></h2>
+                <!-- <h2><a href="#">Continue</a></h2> -->
+                <button onclick="login()" id="btn1">Login</button>
+                <button onclick="logout()" id="btn2">Logout</button>
             </div>
             <div>
                 <p>or Connect With Social media</p>
                 <div>
-
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzR04XT4mrm5PZ1fy17qUv_zI_4UucaiNvUQ&usqp=CAU"
                         alt="">
                     <p>Sign in with Twitter</p>
@@ -147,8 +168,20 @@
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>
+<script>
+
+    let mail = document.getElementById("email").value;
+    //console.log(mail);
+    let password = document.getElementById("pass").value;
+    //console.log(password);
+
+    function login(){
+        alert("Successfully Loged In")
+    }
+    function logout(){
+        alert("You are Loged Out")
+    }
+</script>
