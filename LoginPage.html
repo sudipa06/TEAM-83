@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <style>
+        body {
+            background-color: palevioletred;
+        }
+
+        #outer {
+            border: 1px solid black;
+            background-color: white;
+            width: 30%;
+            margin: 5% auto auto auto;
+            border-radius: 8px;
+        }
+
+        #container {
+            /* border: 1px solid rgb(37, 98, 29); */
+            width: 80%;
+            margin: 5% auto 5% auto;
+            height: auto;
+        }
+
+        #container>div>div>img {
+            border: 1px solid brown;
+            border-radius: 50%;
+            width: 10%;
+            margin: 0% 5% 0% 0%;
+            /* padding: 0% 0% 0% 0%; */
+            height: 10%;
+        }
+
+        #container>div>img {
+            /* border: 1px solid brown; */
+            width: 50%;
+        }
+
+        input {
+            color: rgb(13, 1, 1);
+            padding: 4px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 98%;
+            font-size: 15px;
+        }
+
+        #container>div>h2 {
+            border: 1px solid saddlebrown;
+            background-color: rgb(203, 81, 193);
+            border-radius: 7px;
+            color: white;
+            text-align: center;
+            width: 70%;
+            margin: auto;
+        }
+        #container > div > h2:hover {
+            background-color: rgb(223, 110, 214);
+            border-radius: 8px;
+        }
+
+        #container>div:last-child>div {
+            border: 1px solid black;
+            display: flex;
+            /* align-content: center; */
+            text-align: center;
+        }
+
+        #container>div:last-child>p {
+            width: 70%;
+            margin: 5% auto 1% auto;
+        }
+
+        h3 {
+            padding: 0%;
+            margin: 7% 0% 0% 0%;
+        }
+
+        hr {
+            padding-top: 0%;
+            margin-top: 0%;
+        }
+
+        #container>div:last-child>div:nth-child(2) {
+            background-color: rgb(44, 140, 242);
+            color: white;
+            margin: 0% 0% 5% 0%;
+            border-radius: 7px;
+            height: auto;
+        }
+        #container>div:last-child>div:nth-child(2):hover {
+            background-color: rgb(74, 157, 246);
+            border-radius: 8.5px;
+        }
+
+        #container>div:last-child>div:nth-child(3) {
+            background-color: rgb(28, 6, 96);
+            color: white;
+            border-radius: 7px;
+        }
+
+        #container>div:last-child>div:nth-child(3):hover {
+            background-color: rgb(44, 19, 122);
+            border-radius: 8.5px;
+        }
+
+        #container>div:last-child>div>p {
+            margin: 2% 0% 0% 0%;
+
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        button{
+            background-color: rgb(212, 146, 183);
+            border-radius: 8px;
+            padding: 5px 10px;
+        }
+
+        button:hover{
+            background-color: rgb(165, 79, 128);
+            border-radius: 10px;
+            padding: 5px 10px;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="container">
+            <div>
+                <img src="https://thumbs.dreamstime.com/b/login-concept-28963227.jpg" alt="">
+            </div>
+            <div>
+                <h3>Email:</h3>
+                <input type="email" id="email" placeholder="enter your email">
+                <hr>
+                <h3>Password:</h3>
+                <input type="password" id="pass" placeholder="enter your password">
+                <hr>
+            </div>
+            <br>
+            <div>
+                <!-- <h2><a href="#">Continue</a></h2> -->
+                <button onclick="login()" id="btn1">Login</button>
+                <button onclick="logout()" id="btn2">Logout</button>
+            </div>
+            <div>
+                <p>or Connect With Social media</p>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzR04XT4mrm5PZ1fy17qUv_zI_4UucaiNvUQ&usqp=CAU"
+                        alt="">
+                    <p>Sign in with Twitter</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAP2LxNRdF04uBOHUhBtLLqkm_SkHuNmokig&usqp=CAU"
+                        alt="">
+                    <p>Sign in with Facebook</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+    let mail = document.getElementById("email").value;
+    //console.log(mail);
+    let password = document.getElementById("pass").value;
+    //console.log(password);
+
+    function login(){
+        alert("Successfully Loged In")
+    }
+    function logout(){
+        alert("You are Loged Out")
+    }
+</script>
