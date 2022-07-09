@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #container{
+        display: grid;
+        justify-content: center;
+        width:20%;
+        height: 220px;
+        background-color: teal;
+        gap:40px 0px;
+        margin-top: 100px;
+       }
+      .sign{
+        padding: 0px 60px 0px 55px;
+      }
+      .return{
+        padding: 0px 56px 0px 55px;
+      }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <form>
+            <h1>Visitor</h1>
+            <input id="name" type="full name" placeholder="Full Name"/><br/>
+            <input id="mail" type="email" placeholder="Email"/><br/>
+            <input id="org" type="organization" placeholder="organization"/><br/>
+            <input type="submit" value = "SIGNUP" class="sign" ><br/>
+            <input type="submit" value="RETURN" class="return">
+        </form>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", signup)
+    document.querySelector("form").addEventListener("submit", Return)
+
+    function signup(){
+        alert("sign up succesfull")
+    }
+    function Return(){
+        alert("returned succesfully")
+    }
+</script>
