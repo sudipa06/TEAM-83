@@ -5,8 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body>div{
+            border:3px solid;
+            width:95%;
+            margin:auto;
+            background-color: black;
+            border-radius: 20px;
+            display:flex;
+            justify-content: space-between;
+        }
+        body>div>div{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:40px;
+            margin:0px 10px;
+        }
+        h1{
+            color:white
+        }
+        @media all (min-width:480px) and
+    </style>
 </head>
 <body>
-    <h1>Hello</h1>
+    <div>
+        <div><h1>Reebok</h1></div>
+        <div>
+            <div><h1>Men</h1></div>
+            <div><h1>Women</h1></div>
+            <div><h1>Login</h1></div>
+            <div><h1>Signup</h1></div>
+        </div>
+    </div>
 </body>
 </html>
